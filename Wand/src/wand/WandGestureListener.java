@@ -14,6 +14,10 @@ import org.wiigee.event.GestureListener;
  */
 public class WandGestureListener implements GestureListener {
 
+    public WandGestureListener(){
+        super();
+    }
+
     @Override
     public void gestureReceived(GestureEvent event) {
         System.out.println("Received a GESTURE");

@@ -4,10 +4,8 @@
  * and open the template in the editor.
  */
 package wand;
-import org.wiigee.control.Wiigee;
 import org.wiigee.control.WiimoteWiigee;
-import org.wiigee.event.GestureEvent;
-import org.wiigee.event.GestureListener;
+
 /**
  *
  * @author marhan
@@ -22,7 +20,12 @@ public class Wand  {
         
         WiimoteWiigee wiigee;
         wiigee = new WiimoteWiigee();
-        wiigee.addGestureListener(new WandGestureListener() );
+
+
+
+        WandGestureListener wgl;
+        wgl = new WandGestureListener();
+        wiigee.addGestureListener( wgl );
        
         
     }
